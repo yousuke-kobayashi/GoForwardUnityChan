@@ -25,7 +25,9 @@ public class CubeController : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Cube")
+        //キューブ同士と地面に衝突したときのみ、音が鳴る
+        if (other.gameObject.tag == "Cube" ||
+            other.gameObject.tag == "Ground")
         {
             audioSource.PlayOneShot(block);
         }

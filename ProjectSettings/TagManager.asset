@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DamageObject
   - Cube
+  - Ground
   layers:
   - Default
   - TransparentFX
